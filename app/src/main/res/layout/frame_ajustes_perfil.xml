@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000">
+
+    <!-- Barra superior gris -->
+    <View
+        android:id="@+id/barraSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#505050"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón de regreso -->
+    <ImageButton
+        android:id="@+id/botonRegresar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/flecha_izquierda"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/barraSuperior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/barraSuperior"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <!-- Título Barra Superior -->
+    <TextView
+        android:id="@+id/tituloVentana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajustes de Perfil"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/barraSuperior"
+        app:layout_constraintBottom_toBottomOf="@id/barraSuperior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Espacio antes de "Editar Información de Usuario" -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@id/barraSuperior" />
+
+    <!-- Editar Información de Usuario -->
+    <TextView
+        android:id="@+id/tituloConfi1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Información de Usuario"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/barraSuperior"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Barra Blanca: Visibilidad -->
+    <View
+        android:id="@+id/barraBlancaVisibilidad"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/tituloConfi1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tituloConfiVisibilidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visibilidad"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/barraBlancaVisibilidad"
+        app:layout_constraintBottom_toBottomOf="@id/barraBlancaVisibilidad"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Espacio antes de "Seguidores" -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@id/barraBlancaVisibilidad" />
+
+    <!-- Seguidores -->
+    <TextView
+        android:id="@+id/tituloConfi3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seguidores"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/barraBlancaVisibilidad"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Espacio antes de "Siguiendo" -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tituloConfi3" />
+
+    <!-- Siguiendo -->
+    <TextView
+        android:id="@+id/tituloConfi4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Siguiendo"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tituloConfi3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Barra Blanca: Permisos -->
+    <View
+        android:id="@+id/barraBlancaPermisos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/tituloConfi4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/tituloConfiPermisos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Permisos"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@id/barraBlancaPermisos"
+        app:layout_constraintBottom_toBottomOf="@id/barraBlancaPermisos"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Texto "¿Quién puede ver mi perfil?" -->
+    <TextView
+        android:id="@+id/tituloQuienVePerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Quién puede ver mi perfil?"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/barraBlancaPermisos"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <!-- Grupo de botones de radio -->
+    <RadioGroup
+        android:id="@+id/grupoRadioPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/tituloQuienVePerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp">
+
+        <RadioButton
+            android:id="@+id/radioCualquiera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cualquiera"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/radioAmigos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amigos"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/radioSoloYo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solo Yo"
+            android:textSize="16sp"
+            android:textColor="@android:color/white" />
+
+    </RadioGroup>
+
+    <!-- Botón para Editar Información de Usuario -->
+    <ImageButton
+        android:id="@+id/btnEditarInfo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/proximo"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/tituloConfi1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tituloConfi1"
+        app:tint="@android:color/white"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <!-- Botón para Seguidores -->
+    <ImageButton
+        android:id="@+id/btnSeguidores"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/proximo"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/tituloConfi3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tituloConfi3"
+        app:tint="@android:color/white"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <!-- Botón para Siguiendo -->
+    <ImageButton
+        android:id="@+id/btnSiguiendo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/proximo"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/tituloConfi4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tituloConfi4"
+        app:tint="@android:color/white"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

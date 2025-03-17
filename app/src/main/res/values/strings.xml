@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">Friendship</string>
+    <string name="conejos_tiernos">conejos tiernos</string>
+    <string name="novedades_de_la_cominidad">Novedades de la cominidad</string>
+    <string name="publicaciones">Publicaciones</string>
+    <string name="actividad">Actividad</string>
+    <string name="post">Post</string>
+    <string name="chats">Chats</string>
+    <string name="todo">TODO</string>
+    <string name="mis_comunidades">Mis Comunidades</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="crear_mi_comunidad">Crear mi comunidad</string>
+    <string name="crear">Crear</string>
+    <string name="crear_comunidad">Crear Comunidad</string>
+    <string name="logo" />
+    <string-array name="opciones">
+        <item>agregar</item>
+        <item>reportar</item>
+
+    </string-array>
 </resources>
+
+
+

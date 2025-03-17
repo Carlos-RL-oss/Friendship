@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="7dp"
+            android:background="@null"
+            android:contentDescription="icono"
+            android:src="@drawable/icono_atras2" />
+
+        <TextView
+            android:id="@+id/button"
+            android:layout_width="199dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/gris"
+            android:text="Editar_Alias"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="5dp"
+        android:layout_marginTop="90dp"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="132dp"
+            android:contentDescription="profile_picture"
+            android:scaleType="centerInside"
+            android:src="@drawable/circulo_p3"
+            android:backgroundTint="@color/black" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mensaje1"
+        android:layout_width="match_parent"
+        android:layout_height="390dp"
+        android:padding="10dp"
+        android:background="@drawable/cuadrado"
+        android:layout_marginTop="270dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="55dp"
+            android:text="textview3_text"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/button3"
+            android:layout_width="295dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/buscar_chats"
+            android:backgroundTint="@android:color/white"
+            android:contentDescription="boton3_desc"
+            android:text=""
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="170dp"
+            android:text="textview4_text"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageView8"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/bt_siguiente"
+            android:contentDescription="icono"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="160dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="106dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="250dp"
+            android:backgroundTint="@android:color/white"
+            android:contentDescription="icono"
+            android:text="button5_text"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:padding="8dp"
+        android:background="@drawable/cuadrado"
+        android:backgroundTint="@color/black"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/icono"></View>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
