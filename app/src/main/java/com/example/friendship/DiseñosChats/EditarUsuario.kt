@@ -1,31 +1,22 @@
-package com.example.friendship
+package com.example.friendship.DiseñosChats
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.friendship.DiseñosChats.Comunidad
+import com.example.friendship.R
 
-class LoginPantalla3 : AppCompatActivity() {
+class EditarUsuario : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_login_pantalla3)
+        setContentView(R.layout.activity_editar_usuario)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        val btn: Button = findViewById(R.id.face)
-        btn.setOnClickListener {
-            val ventana = Intent(this, Comunidad::class.java)
-            startActivity(ventana)
-        }
-
-
     }
+
 }

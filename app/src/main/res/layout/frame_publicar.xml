@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000">
+
+    <!-- Barra superior gris con botón de regreso -->
+    <View
+        android:id="@+id/barraSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#505050"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/botonRegresar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/flecha_izquierda"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/barraSuperior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/barraSuperior"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tituloVentana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publicar"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/barraSuperior"
+        app:layout_constraintBottom_toBottomOf="@id/barraSuperior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Texto "Hacer publicación" -->
+    <TextView
+        android:id="@+id/tituloPublicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hacer publicación"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/barraSuperior"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- Caja de texto -->
+    <EditText
+        android:id="@+id/cajaTextoPublicacion"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@android:color/black"
+        android:hint="Escribe algo..."
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:gravity="top|start"
+        app:layout_constraintTop_toBottomOf="@id/tituloPublicacion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- Imagen de perfil circular -->
+    <ImageView
+        android:id="@+id/imagenPerfil"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/komi"
+        android:scaleType="centerCrop"
+        android:background="@drawable/borde_circular"
+        app:layout_constraintTop_toBottomOf="@id/cajaTextoPublicacion"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón circular al lado de la imagen -->
+    <ImageButton
+        android:id="@+id/botonEnviar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/agregar"
+        android:src="@drawable/enviar"
+        app:layout_constraintBottom_toBottomOf="@id/imagenPerfil"
+        app:layout_constraintStart_toEndOf="@id/imagenPerfil"
+        app:layout_constraintTop_toTopOf="@id/imagenPerfil"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

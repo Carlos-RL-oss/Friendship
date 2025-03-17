@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="#262626">
+
+    </View>
+
+    <TextView
+        android:layout_width="246dp"
+        android:layout_height="64dp"
+        android:fontFamily="@font/inter"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/crear_comunidad" />
+
+
+    <!--Code for layer -->
+    <View
+        android:layout_width="218dp"
+        android:layout_height="218dp"
+        android:background="@drawable/img_19"
+        android:layout_marginTop="198dp"
+        android:layout_marginStart="95dp">
+
+    </View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="464dp"
+        android:text="Nombre" />
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="495dp"
+        android:background="@drawable/r"
+        android:backgroundTint="#505050"
+        android:inputType="text"
+        android:paddingStart="50dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B0B0B0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="572dp"
+        android:text="Categoria" />
+
+
+    <EditText
+        android:id="@+id/etcategoria"
+        android:layout_width="330dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/r"
+        android:backgroundTint="#505050"
+        android:gravity="center_vertical|start"
+        android:inputType="text"
+        android:paddingStart="50dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B0B0B0"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <Button
+        android:layout_width="82dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="680dp"
+        android:background="@drawable/r"
+        android:fontFamily="@font/inter"
+        android:text="crear"
+        android:textColor="#ffffff"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:backgroundTint="#000000"
+        tools:ignore="TouchTargetSizeCheck">
+
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="681dp"
+        android:text="Fondo" />
+
+    <Button
+        android:id="@+id/fondos"
+        android:layout_width="11dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="343dp"
+        android:layout_marginTop="681dp"
+        android:background="@drawable/img_20"
+        android:backgroundTint="#D9D9D9"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+    </Button>
+
+
+</RelativeLayout>

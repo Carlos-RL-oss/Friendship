@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc000000">
+
+    <!-- Barra superior gris -->
+    <View
+        android:id="@+id/barraSuperior"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="#505050"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón de regreso -->
+    <ImageButton
+        android:id="@+id/botonRegresar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/flecha_izquierda"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@id/barraSuperior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/barraSuperior"
+        app:tint="@android:color/white"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <!-- Texto de la barra superior -->
+    <TextView
+        android:id="@+id/tituloVentana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Icono Usuario"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/barraSuperior"
+        app:layout_constraintBottom_toBottomOf="@id/barraSuperior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Contenedor cuadrado con bordes redondeados para la imagen de perfil -->
+    <FrameLayout
+        android:id="@+id/contenedorImagenPerfil"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/barraSuperior"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_rect"
+        android:clipToOutline="true">
+
+        <!-- Imagen de perfil, se ajusta con centerCrop -->
+        <ImageView
+            android:id="@+id/imagenPerfilInner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/komi"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true" />
+    </FrameLayout>
+
+    <!-- Botón redondeado para editar foto -->
+    <Button
+        android:id="@+id/btnEditarFoto"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Editar Foto"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#505050"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="@drawable/boton_redondeado"
+        app:layout_constraintTop_toBottomOf="@id/contenedorImagenPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <!-- Logo centrado en la parte inferior -->
+    <ImageView
+        android:id="@+id/logoInferior"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logosf"
+        android:contentDescription="logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

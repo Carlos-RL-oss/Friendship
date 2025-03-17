@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="InvalidId">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c89fb3"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/btnmenu"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginVertical="18dp"
+            android:background="@drawable/img"
+            android:contentDescription="@string/todo"
+            android:importantForAccessibility="no"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck">
+
+        </ImageButton>
+
+        <View
+            android:id="@+id/miVista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="187dp"
+
+            android:background="@drawable/r"
+            android:backgroundTint="#3d3a3a"
+            tools:ignore="InOrMmUsage">
+
+        </View>
+
+
+        <View
+            android:layout_width="412dp"
+            android:layout_height="302dp"
+            android:background="@drawable/img_1"
+            android:layout_marginVertical="170dp">
+
+        </View>
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="#d9d9d9"
+            android:background="@drawable/img_2"
+            android:layout_marginStart="38dp"
+            android:layout_marginVertical="47dp">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:textStyle="bold|italic"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal"
+            android:text="@string/conejos_tiernos"
+            android:layout_marginVertical="53dp"
+            android:layout_marginStart="128dp">
+
+        </TextView>
+
+        <View
+            android:layout_width="195dp"
+            android:layout_height="24dp"
+            android:backgroundTint="#66505050"
+            android:background="@drawable/img_3"
+            android:layout_marginStart="93dp"
+            android:layout_marginVertical="141dp">
+
+        </View>
+
+        <View
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:background="@drawable/img_4"
+            android:layout_marginStart="108dp"
+            android:layout_marginVertical="146dp">
+
+        </View>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/img_5"
+            android:layout_marginStart="330dp"
+            android:layout_marginVertical="63dp">
+
+        </View>
+
+        <TextView
+            android:layout_width="127dp"
+            android:layout_height="21dp"
+            android:fontFamily="@font/inter"
+            android:textStyle="normal"
+            android:textSize="9sp"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            android:text="@string/novedades_de_la_cominidad"
+            tools:ignore="SmallSp"
+            android:layout_marginStart="127dp"
+            android:layout_marginVertical="147dp">
+
+        </TextView>
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_margin="-53dp"
+            android:layout_marginTop="442dp"
+            android:background="@drawable/img_7">
+
+        </View>
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="54dp"
+            android:backgroundTint="#505050"
+            android:layout_marginStart="70dp"
+            android:layout_marginVertical="610dp"
+            android:background="@drawable/r">
+
+        </View>
+
+
+        <Button
+            android:id="@+id/btnmas"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            app:backgroundTint="#D9D9D9"
+            android:background="@drawable/c"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </Button>
+
+        <View
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:background="@drawable/img_22"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="700dp">
+
+        </View>
+
+        <Button
+            android:id="@+id/pubicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:fontFamily="@font/inter"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:text="@string/publicaciones"
+            android:layout_marginVertical="228dp"
+            android:layout_marginStart="12dp"
+            android:backgroundTint="#3D3A3A">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnActividad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:fontFamily="@font/inter"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:text="@string/actividad"
+            android:layout_marginVertical="228dp"
+            android:layout_marginStart="125dp"
+            android:backgroundTint="#3D3A3A">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:fontFamily="@font/inter"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:text="@string/post"
+            android:layout_marginVertical="228dp"
+            android:layout_marginStart="205dp"
+            android:backgroundTint="#3D3A3A">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnchats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:fontFamily="@font/inter"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:text="@string/chats"
+            android:layout_marginVertical="228dp"
+            android:layout_marginStart="275dp"
+            android:backgroundTint="#3D3A3A">
+
+        </Button>
+
+
+        <!-- parte del boton de los tres puntos
+         desplegables-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="440dp"
+            android:text="..."
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="295dp" />
+
+        <Spinner
+            android:id="@+id/btnmenu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="445dp"
+            android:layout_marginStart="295dp"
+            android:backgroundTint="#3D3A3A"
+            android:fontFamily="@font/inter"
+            android:text="..."
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:visibility="visible"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck"
+            tools:visibility="visible" />
+
+        <!-- botones de la parte inferior -->
+        <Button
+            android:id="@+id/btnhome"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="63dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/c"
+            app:backgroundTint="#D9D9D9"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </Button>
+
+        <View
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="700dp"
+            android:background="@drawable/img_21">
+
+        </View>
+
+        <Button
+            android:id="@+id/btnm"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="250dp"
+            android:layout_marginBottom="20dp"
+            app:backgroundTint="#D9D9D9"
+            android:background="@drawable/c"
+            tools:ignore="SpeakableTextPresentCheck">
+
+        </Button>
+
+        <View
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="700dp"
+            android:layout_marginStart="262dp"
+            android:background="@drawable/img_23">
+
+        </View>
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

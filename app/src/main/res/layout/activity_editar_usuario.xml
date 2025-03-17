@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#cc000000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="informacionU"
+            android:textStyle="normal"
+            android:textSize="24sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="70dp"
+            android:gravity="center_horizontal"
+            tools:text="Editar Info de Usuario" />
+
+        <ImageView
+            android:contentDescription="icono"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icono_atras"
+            android:backgroundTint="@color/white"
+            android:layout_marginTop="38dp"
+            android:layout_centerVertical="true"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="495dp"
+        android:padding="8dp"
+        android:background="#505050"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="iconoU"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="70dp"
+            android:gravity="center_horizontal"
+            tools:text="Icono de Usuario" />
+
+        <View
+            android:layout_width="47dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="306dp"
+            android:layout_marginTop="59dp"
+            android:layout_marginBottom="16dp"
+            android:background="#ffffff"></View>
+
+        <View
+            android:layout_width="47dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="306dp"
+            android:layout_marginTop="119dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/siguiente"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="325dp"
+            android:layout_marginTop="65dp"
+            android:textColor="#000000"
+            android:text="I"
+            android:gravity="center_horizontal"
+            tools:text="I" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:text="Alias"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="130dp"
+            android:gravity="center_horizontal"
+            tools:text="Alias" />
+
+        <View
+            android:layout_width="47dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="306dp"
+            android:layout_marginTop="179dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/siguiente"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="195dp"
+            android:text="Estado"
+            android:gravity="center_horizontal"
+            tools:text="Estado" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="257dp"
+            android:text="Genero"
+            android:gravity="center_horizontal"
+            tools:text="Genero" />
+
+        <View
+            android:layout_width="47dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="306dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/siguiente"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="315dp"
+            android:text="Biografia"
+            android:gravity="center_horizontal"
+            tools:text="Biografia" />
+
+        <View
+            android:layout_width="47dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="306dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/siguiente"></View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="375dp"
+            android:text="fondo"
+            android:gravity="center_horizontal"
+            tools:text="Fondo del Perfil" />
+
+        <View
+            android:layout_width="47dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="306dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/siguiente"></View>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/icono"></View>
+    </RelativeLayout>
+
+</RelativeLayout>
